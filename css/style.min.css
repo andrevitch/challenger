@@ -182,19 +182,19 @@ h3 {
 }
 
 .btn-primary {
-    background-color: rgba(var(--white), .9);
+    background-color: rgba(var(--white), 1);
 }
 
 .btn-primary a {
-    color: rgba(var(--black), .9);
+    color: rgba(var(--black), 1);
 }
 
 .btn-secondary {
-    background-color: rgba(var(--black), .9);
+    background-color: rgba(var(--black), 1);
 }
 
 .btn-secondary a {
-    color: rgba(var(--white), .9);
+    color: rgba(var(--white), 1);
 }
 
 .contact-btn {
