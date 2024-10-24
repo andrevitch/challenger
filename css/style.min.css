@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 /* ***CSS Reset***  */
 *,
 *::after,
@@ -77,7 +70,7 @@ p,
 h4,
 
 .client,
-.read-more,
+
 #contact-form label {
     font-weight: 600;
 }
@@ -93,16 +86,22 @@ p,
     font-weight: 400;
 }
 
-.price-span {
+.blog-grid h4,
+.read-more {
+    font-weight: 700;
+}
+
+#contact-form label {
     font-weight: 600;
 }
 
+
 /* Letter Spacings  */
-a.brand,
+/* a.brand,
 .btn-div a,
 .footer-container>a {
     letter-spacing: 1px;
-}
+} */
 
 /* Text Decorations/List Styles  */
 ul {
@@ -141,15 +140,18 @@ address {
 /* Setting Colors  */
 h1,
 h2 {
-    color: rgba(var(--white), 1);
+    color: rgba(var(--white), .9);
 }
 
 h4,
-p,
 a.brand,
 a,
 .terms a {
     color: rgba(var(--white), .9);
+}
+
+p {
+    color: rgba(var(--white), .7);
 }
 
 h3 {
@@ -157,7 +159,7 @@ h3 {
 }
 
 .post-date {
-    color: rgba(var(--white), .8);
+    color: rgba(var(--white), .65);
 }
 
 .membership-container h2,
@@ -166,14 +168,29 @@ h3 {
 .contact-container h2,
 #contact-form input,
 #contact-form textarea {
-    color: rgba(var(--black), 1);
+    color: rgba(var(--black), .95);
 }
+
+
 
 .membership-container p,
 .about-container p,
 .testimonials-container p,
 .contact-container h4,
 #contact-form label {
+    color: rgba(var(--black), .7);
+}
+
+#contact-form label {
+    color: rgba(var(--black), .8);
+}
+
+.price {
+    color: rgba(var(--black), .8);
+}
+
+.price-span {
+    font-weight: 700;
     color: rgba(var(--black), .9);
 }
 
@@ -186,7 +203,7 @@ h3 {
 }
 
 .btn-primary a {
-    color: rgba(var(--black), 1);
+    color: rgba(var(--black), .95);
 }
 
 .btn-secondary {
@@ -234,6 +251,23 @@ h3 {
     color: rgba(var(--white), .8);
 }
 
+.blog-txt {
+    color: rgba(var(--white), .8);
+}
+
+.read-more {
+    color: rgba(var(--white), .5);
+}
+
+.contact-container h4 {
+    color: rgba(var(--black), .8);
+}
+
+.subscribe-form p {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+}
+
 
 /* Outline/Focus  */
 a:focus,
@@ -263,8 +297,18 @@ button:focus {
     border-radius: 4px;
 }
 
+.btn-div,
+.contact-btn,
+.btn-primary,
+.btn-secondary,
+.email-subscribe {
+    -webkit-box-shadow: 0px 4px 0px 0px rgba(66, 64, 63, 1);
+    box-shadow: 0px 4px 0px 0px rgba(66, 64, 63, 1);
+}
+
 .btn-div a {
     padding: 1.6rem 3.2rem;
+
 }
 
 .contact-btn {
@@ -272,6 +316,26 @@ button:focus {
     line-height: 2rem;
 }
 
+.testimonial a .client {
+    font-weight: 700;
+    color: rgba(var(--black), .8);
+}
+
+#contact-form div input {
+    height: 4rem;
+}
+
+.subscribe-div input {
+    text-align: center;
+}
+
+.terms a {
+    color: rgba(var(--white), .7);
+}
+
+.copyright {
+    color: rgba(var(--white), .65);
+}
 
 /* Navbar/Hamburger  */
 header {
@@ -318,13 +382,23 @@ header {
 }
 
 .up-div .pageup img {
-    width: 4.8rem;
+    width: 4rem;
 }
 
 /* Contact  */
 #contact-form input,
 #contact-form textarea {
     padding-left: 1.6rem;
+}
+
+#contact-form div input {
+    border-radius: 4px;
+    border: 1.5px solid #868380;
+}
+
+
+.contact-btn:active {
+    border: none;
 }
 
 
@@ -374,13 +448,17 @@ header {
     }
 
     h3 {
-        font-size: 2.4rem;
-        line-height: 2.8rem;
+        /* font-size: 2.4rem;
+        line-height: 2.8rem; */
+        font-size: 2.2rem;
+        line-height: 2.6rem;
     }
 
     h4 {
-        font-size: 2.4rem;
-        line-height: 3rem;
+        /* font-size: 2.4rem;
+        line-height: 3rem; */
+        font-size: 2rem;
+        line-height: 2.6rem;
     }
 
     p,
@@ -423,8 +501,10 @@ header {
 
     #contact-form label,
     .contact-info p {
-        font-size: 1.8rem;
-        line-height: 3rem;
+        /* font-size: 1.8rem;
+        line-height: 3rem; */
+        font-size: 1.6rem;
+        line-height: 2.8rem;
     }
 
     .footer-container>a {
@@ -441,6 +521,10 @@ header {
     /* Common Elements  */
     .btn-primary {
         margin-right: auto;
+    }
+
+    .btn-div a {
+        padding: 1.2rem 2.4rem;
     }
 
 
@@ -486,7 +570,7 @@ header {
 
     .hero-div p {
         max-width: 32rem;
-        margin-bottom: 2.4rem;
+        margin-bottom: 2rem;
     }
 
     .after-hero {
@@ -563,6 +647,7 @@ header {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
+        margin-bottom: .4rem;
     }
 
     .classes-div p {
@@ -599,7 +684,7 @@ header {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
-
+        margin-bottom: .4rem;
     }
 
     .trainers-div h2 {
@@ -651,6 +736,10 @@ header {
         background-color: rgba(var(--black), 1);
         padding-top: 4rem;
         padding-bottom: 4rem;
+    }
+
+    .blog-container {
+        padding-bottom: .4rem;
     }
 
     .blog-container h2 {
@@ -732,7 +821,7 @@ header {
     }
 
     #contact-form div input {
-        height: 5.2rem;
+        height: 4rem;
         border-radius: 4px;
         border: 1.5px solid rgba(var(--black), .9);
     }
@@ -759,11 +848,13 @@ header {
     .contact-btn {
         font-size: 1.6rem;
         line-height: 1.6rem;
-        height: 5.2rem;
+        height: 4rem;
         border-radius: 4px;
         width: 22.7rem;
         margin-left: auto;
         cursor: pointer;
+        border: none;
+        margin-bottom: .4rem;
     }
 
 
@@ -811,17 +902,17 @@ header {
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
-        gap: 2.4rem;
+        gap: 2rem;
     }
 
     .address-div {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        gap: .4rem;
-        -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-        align-items: baseline;
+        gap: .8rem;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
     }
 
     .phone-div,
@@ -829,12 +920,12 @@ header {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        gap: .4rem;
+        gap: .8rem;
     }
 
     .contact-info address {
         gap: 2.4rem;
-        margin-bottom: 3.2rem;
+        margin-bottom: 5.6rem;
     }
 
     .socials {
@@ -847,11 +938,17 @@ header {
         align-items: center;
     }
 
+    .footer-col-1 a,
+    .footer-col-2 a {
+        color: rgba(var(--white), .7);
+    }
+
     .subscribe-form h4 {
         margin-bottom: .4rem;
     }
 
     .subscribe-form>p {
+        font-size: 1.6rem;
         margin-bottom: 1.6rem;
     }
 
@@ -870,7 +967,7 @@ header {
         font-size: 1.8rem;
         line-height: 1.8rem;
         width: 100%;
-        height: 5.2rem;
+        height: 4rem;
         background-color: rgba(var(--white), .9);
         border: none;
         padding-left: 1.6rem;
@@ -879,7 +976,7 @@ header {
 
     .email-subscribe {
         width: 100%;
-        height: 5.2rem;
+        height: 4rem;
         font-size: 2rem;
         line-height: 2rem;
         letter-spacing: 1px;
@@ -916,7 +1013,7 @@ header {
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
-        gap: 2.4rem;
+        gap: 2rem;
     }
 
 
@@ -952,7 +1049,7 @@ header {
     /* Fonts  */
     h1 {
         font-size: 6rem;
-        line-height: 6.4rem;
+        line-height: 6rem;
         margin-bottom: 1.6rem;
     }
 
@@ -997,8 +1094,8 @@ header {
     }
 
     .read-more {
-        font-size: 2rem;
-        line-height: 3rem;
+        font-size: 1.8rem;
+        line-height: 2.8rem;
     }
 
     .btn-div a {
@@ -1159,6 +1256,7 @@ header {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
+        margin-bottom: .4rem;
 
     }
 
@@ -1214,7 +1312,7 @@ header {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-
+        margin-bottom: .4rem;
     }
 
     .trainers-div h2 {
@@ -1272,6 +1370,10 @@ header {
         background-color: rgba(var(--black), 1);
         padding-top: 6.4rem;
         padding-bottom: 6.4rem;
+    }
+
+    .blog-container {
+        padding-bottom: .4rem;
     }
 
     .blog-container h2 {
@@ -1351,7 +1453,7 @@ header {
         flex-direction: column;
         width: 58rem;
         margin: auto;
-        margin-bottom: 2rem;
+        margin-bottom: 2.4rem;
     }
 
     #contact-form div label {
@@ -1359,7 +1461,7 @@ header {
     }
 
     #contact-form div input {
-        height: 5.2rem;
+        height: 4rem;
         border-radius: 4px;
         border: 1.5px solid rgba(var(--black), .9);
     }
@@ -1394,6 +1496,8 @@ header {
         width: 26.8rem;
         margin-left: auto;
         cursor: pointer;
+        margin-bottom: .4rem;
+        border: none;
     }
 
 
@@ -1445,10 +1549,10 @@ header {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        gap: .4rem;
-        -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-        align-items: baseline;
+        gap: .8rem;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
     }
 
     .phone-div,
@@ -1456,22 +1560,27 @@ header {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        gap: .4rem;
+        gap: .8rem;
     }
 
     .contact-info address {
-        gap: 2.4rem;
-        margin-bottom: 3.2rem;
+        gap: 2rem;
+        margin-bottom: 5.6rem;
     }
 
     .socials {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        gap: 3.6rem;
+        gap: 3.2rem;
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
+    }
+
+    .footer-col-1 a,
+    .footer-col-2 a {
+        color: rgba(var(--white), .7);
     }
 
     .footer-col-4 {
@@ -1506,7 +1615,6 @@ header {
         height: 5.2rem;
         background-color: rgba(var(--white), .9);
         border: none;
-        padding-left: 1.6rem;
         border-radius: 4px;
     }
 
@@ -1558,7 +1666,7 @@ header {
     }
 
     .contact-fluid {
-        padding: 8rem 0;
+        padding: 12rem 0;
     }
 
     .mobile-only {
@@ -1583,7 +1691,7 @@ header {
 
     h2 {
         font-size: 5.6rem;
-        line-height: 5.6rem;
+        line-height: 6rem;
         margin-bottom: 1.6rem;
         text-align: center;
     }
@@ -1603,7 +1711,7 @@ header {
     #contact-form input,
     #contact-form textarea {
         font-size: 2rem;
-        line-height: 3rem;
+        line-height: 2.8rem;
     }
 
     .price {
@@ -1618,12 +1726,12 @@ header {
 
     .post-date {
         font-size: 1.8rem;
-        line-height: 3rem;
+        line-height: 2.6rem;
     }
 
     .read-more {
-        font-size: 2rem;
-        line-height: 3rem;
+        font-size: 1.8rem;
+        line-height: 2.6rem;
     }
 
     .btn-div a {
@@ -1636,15 +1744,19 @@ header {
         line-height: 3rem;
     }
 
-    #contact-form label,
+    #contact-form label {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+    }
+
     .contact-info p {
         font-size: 1.8rem;
-        line-height: 3rem;
+        line-height: 2.6rem;
     }
 
     .footer-container>a {
         font-size: 2rem;
-        line-height: 3rem;
+        line-height: 2.8rem;
     }
 
     .terms a,
@@ -1691,7 +1803,7 @@ header {
 
     .hero-div {
         position: absolute;
-        bottom: 16rem;
+        bottom: 20rem;
     }
 
     .hero-div h1 {
@@ -1700,7 +1812,7 @@ header {
 
     .hero-div p {
         max-width: 36rem;
-        margin-bottom: 2.4rem;
+        margin-bottom: 3.2rem;
     }
 
 
@@ -1708,7 +1820,7 @@ header {
     .membership-container>p {
         text-align: center;
         margin: auto;
-        max-width: 65rem;
+        max-width: 55.9rem;
         margin-bottom: 8rem;
     }
 
@@ -1721,7 +1833,7 @@ header {
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
         justify-content: space-between;
-        margin-bottom: 4.8rem;
+        margin-bottom: 5.6rem;
     }
 
     .membership-left,
@@ -1776,11 +1888,13 @@ header {
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
+        margin-bottom: .4rem;
     }
 
     .classes-div h2 {
         max-width: 48rem;
         text-align: left;
+        line-height: 6rem;
     }
 
     .classes-div p {
@@ -1826,11 +1940,13 @@ header {
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
+        margin-bottom: .4rem;
     }
 
     .trainers-div h2 {
         max-width: 48rem;
         text-align: left;
+        line-height: 6rem;
     }
 
     .trainers-div p {
@@ -1841,7 +1957,7 @@ header {
 
     /* Testimonials  */
     .testimonials-container h2 {
-        margin-bottom: 4.8rem;
+        margin-bottom: 6.4rem;
     }
 
     .testimonials-grid {
@@ -1861,6 +1977,13 @@ header {
 
     .testimonial>p {
         margin-bottom: 1.2rem;
+        font-size: 1.8rem;
+        line-height: 2.6rem;
+    }
+
+    .client {
+        font-size: 1.8rem;
+        line-height: 2.6rem;
     }
 
     .testimonials-container .btn-secondary {
@@ -1873,6 +1996,10 @@ header {
         background-color: rgba(var(--black), 1);
         padding-top: 8rem;
         padding-bottom: 8rem;
+    }
+
+    .blog-container {
+        padding-bottom: .4rem;
     }
 
     .blog-container h2 {
@@ -1901,11 +2028,11 @@ header {
     }
 
     .post h4 {
-        margin-bottom: 1.6rem;
+        margin-bottom: .8rem;
     }
 
     .post-date {
-        margin-bottom: 1.2rem;
+        margin-bottom: 1.6rem;
     }
 
     .post p:nth-child(4) {
@@ -1948,18 +2075,14 @@ header {
         flex-direction: column;
         width: 58rem;
         margin: auto;
-        margin-bottom: 2rem;
+        margin-bottom: 2.4rem;
     }
 
     #contact-form div label {
         margin-bottom: .4rem;
     }
 
-    #contact-form div input {
-        height: 5.2rem;
-        border-radius: 4px;
-        border: 1.5px solid rgba(var(--black), .9);
-    }
+
 
     #contact-form .email-phone {
         display: -webkit-box;
@@ -1991,6 +2114,8 @@ header {
         width: 26.8rem;
         margin-left: auto;
         cursor: pointer;
+        border: none;
+        margin-bottom: .4rem;
     }
 
 
@@ -2014,11 +2139,12 @@ header {
 
     .footer-grid a {
         font-size: 1.8rem;
-        line-height: 2.8rem;
+        line-height: 2.6rem;
         display: block;
         width: -webkit-fit-content;
         width: -moz-fit-content;
         width: fit-content;
+        color: rgba(var(--white), .7);
     }
 
     .contact-info address,
@@ -2042,9 +2168,9 @@ header {
         display: -ms-flexbox;
         display: flex;
         gap: .4rem;
-        -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-        align-items: baseline;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
     }
 
     .phone-div,
@@ -2052,12 +2178,12 @@ header {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        gap: .4rem;
+        gap: .8rem;
     }
 
     .contact-info address {
-        gap: 2.4rem;
-        margin-bottom: 3.2rem;
+        gap: 1.6rem;
+        margin-bottom: 5.6rem;
     }
 
     .socials {
@@ -2080,7 +2206,7 @@ header {
     }
 
     .subscribe-form>p {
-        margin-bottom: 1.6rem;
+        margin-bottom: 2.4rem;
     }
 
     .subscribe-div {
@@ -2137,6 +2263,17 @@ header {
         display: -ms-flexbox;
         display: flex;
         gap: 3.2rem;
+    }
+
+    .footer-copyright p,
+    .footer-copyright div a {
+        font-size: 1.8rem;
+        line-height: 3rem;
+        color: rgba(var(--white), .7);
+    }
+
+    .footer-copyright p {
+        color: rgba(var(--white), .65);
     }
 
 
@@ -2218,7 +2355,7 @@ header {
     .hamburger {
         display: block;
         position: absolute;
-        top: 3.9rem;
+        top: 4rem;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
