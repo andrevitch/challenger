@@ -401,6 +401,18 @@ header {
     border: none;
 }
 
+.btn-div:active,
+.btn-div:focus {
+    border: none;
+    outline: none;
+}
+
+.btn-div a:active,
+.btn-div a:focus {
+    border: none;
+    outline: none;
+}
+
 
 /* Mobile  */
 @media only screen and (max-width: 767px) {
@@ -1799,6 +1811,7 @@ header {
     /* Hero  */
     .hero-fluid {
         background: url('../img/hero.jpg') no-repeat center center/cover;
+        height: 100vh;
     }
 
     .hero-div {
