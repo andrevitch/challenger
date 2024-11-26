@@ -416,7 +416,7 @@ header {
 
 /* Sections reveal  */
 .section {
-    transition: transform .5s, opacity .1s;
+    transition: transform .7s, opacity .1s;
 }
 
 .section--hidden {
