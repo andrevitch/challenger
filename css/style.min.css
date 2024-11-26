@@ -414,6 +414,17 @@ header {
 }
 
 
+/* Sections reveal  */
+.section {
+    transition: transform .5s, opacity .1s;
+}
+
+.section--hidden {
+    opacity: 0;
+    transform: translateY(8rem);
+}
+
+
 /* Mobile  */
 @media only screen and (max-width: 767px) {
 
