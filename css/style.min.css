@@ -390,7 +390,7 @@ header {
 }
 
 .up-div .pageup img {
-    width: 4rem;
+    width: 3.2rem;
 }
 
 /* Contact  */
@@ -424,15 +424,15 @@ header {
 
 /* Sections reveal  */
 .section {
-    -webkit-transition: opacity .1s, -webkit-transform .7s;
-    transition: opacity .1s, -webkit-transform .7s;
-    -o-transition: transform .7s, opacity .1s;
-    transition: transform .7s, opacity .1s;
-    transition: transform .7s, opacity .1s, -webkit-transform .7s;
+    -webkit-transition: opacity .1s, -webkit-transform .9s;
+    transition: opacity .1s, -webkit-transform .9s;
+    -o-transition: transform .9s, opacity .1s;
+    transition: transform .9s, opacity .1s;
+    transition: transform .9s, opacity .1s, -webkit-transform .9s;
 }
 
 .section--hidden {
-    opacity: 0;
+    opacity: 1;
     -webkit-transform: translateY(8rem);
     -ms-transform: translateY(8rem);
     transform: translateY(8rem);
@@ -1051,6 +1051,16 @@ header {
         -ms-flex-direction: column;
         flex-direction: column;
         gap: 2rem;
+    }
+
+    /* Pageup  */
+    .up-div .pageup {
+        bottom: 2.4rem;
+        right: 2.4rem;
+    }
+
+    .up-div .pageup img {
+        width: 2.4rem;
     }
 
 
@@ -1687,6 +1697,17 @@ header {
         display: -ms-flexbox;
         display: flex;
         gap: 3.2rem;
+    }
+
+
+    /* Pageup  */
+    .up-div .pageup {
+        bottom: 4rem;
+        right: 4rem;
+    }
+
+    .up-div .pageup img {
+        width: 3.2rem;
     }
 
 
@@ -2434,15 +2455,7 @@ header {
         margin-bottom: -0.2rem;
     }
 
-    /* Pageup  */
-    .up-div .pageup {
-        bottom: 2rem;
-        right: 2rem;
-    }
 
-    .up-div .pageup img {
-        width: 4rem;
-    }
 
 
 }
