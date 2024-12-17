@@ -1,3 +1,4 @@
+
 /*
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.4.14,
@@ -52,6 +53,7 @@ a.brand,
 .btn-div a,
 .contact-btn,
 .footer-container>a,
+.footer-brand,
 .email-subscribe {
     font-family: "Archivo Black", sans-serif;
     text-transform: uppercase;
@@ -93,9 +95,12 @@ p,
     font-weight: 400;
 }
 
-.blog-grid h4,
-.read-more {
+.blog-grid h4 {
     font-weight: 700;
+}
+
+.read-more {
+    font-weight: 500;
 }
 
 #contact-form label {
@@ -153,6 +158,7 @@ h2 {
 h4,
 a.brand,
 a,
+.footer-brand,
 .terms a {
     color: rgba(var(--white), .9);
 }
@@ -203,6 +209,10 @@ h3 {
 
 .footer-fluid {
     background-color: rgba(var(--black), 1);
+}
+
+.contact-info .footer-brand {
+    color: rgba(var(--white), .9);
 }
 
 .btn-primary {
@@ -260,7 +270,7 @@ body,
 }
 
 .blog-txt {
-    color: rgba(var(--white), .8);
+    color: rgba(var(--white), .75);
 }
 
 .read-more {
@@ -947,9 +957,9 @@ header {
         display: -ms-flexbox;
         display: flex;
         gap: .8rem;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: start;
     }
 
     .phone-div,
@@ -963,6 +973,12 @@ header {
     .contact-info address {
         gap: 2.4rem;
         margin-bottom: 5.6rem;
+    }
+
+    .contact-info .footer-brand {
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        line-height: 2.6rem;
     }
 
     .socials {
@@ -1524,7 +1540,7 @@ header {
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
         justify-content: space-between;
-        grid-template: 4rem;
+            grid-template: 4rem;
 
     }
 
@@ -1597,9 +1613,9 @@ header {
         display: -ms-flexbox;
         display: flex;
         gap: .8rem;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: start;
     }
 
     .phone-div,
@@ -1613,6 +1629,17 @@ header {
     .contact-info address {
         gap: 2rem;
         margin-bottom: 5.6rem;
+    }
+
+    .contact-info .footer-brand {
+        margin-bottom: 1.6rem;
+        font-size: 2rem;
+        line-height: 2.6rem;
+    }
+
+    .footer-container h4 {
+        font-size: 2rem;
+        line-height: 2.6rem;
     }
 
     .socials {
@@ -1764,6 +1791,11 @@ header {
         line-height: 3rem;
     }
 
+    .footer-container h4 {
+        font-size: 2rem;
+        line-height: 2.8rem;
+    }
+
     p,
     a.brand,
     #contact-form input,
@@ -1812,9 +1844,10 @@ header {
         line-height: 2.6rem;
     }
 
-    .footer-container>a {
+    .contact-info .footer-brand {
         font-size: 2rem;
         line-height: 2.8rem;
+        margin-bottom: 1.2rem;
     }
 
     .terms a,
@@ -2154,7 +2187,7 @@ header {
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
         justify-content: space-between;
-        grid-template: 4rem;
+            grid-template: 4rem;
 
     }
 
@@ -2193,7 +2226,7 @@ header {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         margin-top: 2.4rem;
-        margin-bottom: 8rem;
+        margin-bottom: 6.4rem;
     }
 
     .footer-grid a {
@@ -2219,17 +2252,17 @@ header {
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
-        gap: 1.6rem;
+        gap: 1.2rem;
     }
 
     .address-div {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        gap: .4rem;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
+        gap: .8rem;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: start;
     }
 
     .phone-div,
