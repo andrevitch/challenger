@@ -1,4 +1,3 @@
-
 /*
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.4.14,
@@ -138,6 +137,10 @@ address {
 
 .terms a {
     text-decoration: underline;
+}
+
+.testimonial>p {
+    font-style: italic;
 }
 
 
@@ -958,8 +961,8 @@ header {
         display: flex;
         gap: .8rem;
         -webkit-box-align: start;
-            -ms-flex-align: start;
-                align-items: start;
+        -ms-flex-align: start;
+        align-items: start;
     }
 
     .phone-div,
@@ -1540,7 +1543,7 @@ header {
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
         justify-content: space-between;
-            grid-template: 4rem;
+        grid-template: 4rem;
 
     }
 
@@ -1614,8 +1617,8 @@ header {
         display: flex;
         gap: .8rem;
         -webkit-box-align: start;
-            -ms-flex-align: start;
-                align-items: start;
+        -ms-flex-align: start;
+        align-items: start;
     }
 
     .phone-div,
@@ -2187,7 +2190,7 @@ header {
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
         justify-content: space-between;
-            grid-template: 4rem;
+        grid-template: 4rem;
 
     }
 
@@ -2261,8 +2264,8 @@ header {
         display: flex;
         gap: .8rem;
         -webkit-box-align: start;
-            -ms-flex-align: start;
-                align-items: start;
+        -ms-flex-align: start;
+        align-items: start;
     }
 
     .phone-div,
