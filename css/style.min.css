@@ -2394,6 +2394,13 @@ header {
     .btn-secondary a:hover {
         color: rgba(var(--white), 1);
     }
+
+
+    /* Hover  */
+    .footer-col-1 a:hover,
+    .footer-col-2 a:hover {
+        text-decoration: underline;
+    }
 }
 
 
@@ -2424,7 +2431,7 @@ header {
         top: 0rem;
         left: -100%;
         width: 100%;
-        gap: 4rem;
+        gap: 3.2rem;
         height: 100vh;
         background-color: var(--bg);
         -webkit-transition: 0.6s all;
@@ -2443,7 +2450,7 @@ header {
     }
 
     .menu_item a {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 
     /* Hamburger  */
